@@ -46,6 +46,8 @@
             this.TenKhachHang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DiaChi = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SoTien = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TongtienLabel = new System.Windows.Forms.Label();
+            this.TongtienTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +79,6 @@
             this.STKLabel.Size = new System.Drawing.Size(121, 25);
             this.STKLabel.TabIndex = 2;
             this.STKLabel.Text = "Số tài khoản";
-            this.STKLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // TKHTextBox
             // 
@@ -96,7 +97,6 @@
             this.TKHLabel.Size = new System.Drawing.Size(154, 25);
             this.TKHLabel.TabIndex = 2;
             this.TKHLabel.Text = "Tên khách hàng";
-            this.TKHLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // DCKHTextBox
             // 
@@ -115,7 +115,6 @@
             this.DCKHLabel.Size = new System.Drawing.Size(178, 25);
             this.DCKHLabel.TabIndex = 2;
             this.DCKHLabel.Text = "Địa chỉ khách hàng";
-            this.DCKHLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // STTTKTextBox
             // 
@@ -124,6 +123,7 @@
             this.STTTKTextBox.Name = "STTTKTextBox";
             this.STTTKTextBox.Size = new System.Drawing.Size(644, 35);
             this.STTTKTextBox.TabIndex = 3;
+            this.STTTKTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.STTTKTextBox_KeyPress);
             // 
             // STTTKLabel
             // 
@@ -134,7 +134,6 @@
             this.STTTKLabel.Size = new System.Drawing.Size(206, 25);
             this.STTTKLabel.TabIndex = 2;
             this.STTTKLabel.Text = "Số tiền trong tài khoản";
-            this.STTTKLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // ThemCapnhatButton
             // 
@@ -173,13 +172,12 @@
             this.TenKhachHang,
             this.DiaChi,
             this.SoTien});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 458);
+            this.listView1.Location = new System.Drawing.Point(45, 458);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1420, 436);
+            this.listView1.Size = new System.Drawing.Size(1343, 396);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -210,11 +208,29 @@
             this.SoTien.Text = "Số tiền";
             this.SoTien.Width = 200;
             // 
+            // TongtienLabel
+            // 
+            this.TongtienLabel.AutoSize = true;
+            this.TongtienLabel.Location = new System.Drawing.Point(1004, 870);
+            this.TongtienLabel.Name = "TongtienLabel";
+            this.TongtienLabel.Size = new System.Drawing.Size(79, 20);
+            this.TongtienLabel.TabIndex = 7;
+            this.TongtienLabel.Text = "Tổng tiền:";
+            // 
+            // TongtienTextBox
+            // 
+            this.TongtienTextBox.Location = new System.Drawing.Point(1103, 866);
+            this.TongtienTextBox.Name = "TongtienTextBox";
+            this.TongtienTextBox.Size = new System.Drawing.Size(285, 26);
+            this.TongtienTextBox.TabIndex = 8;
+            // 
             // Bai08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 894);
+            this.ClientSize = new System.Drawing.Size(1420, 911);
+            this.Controls.Add(this.TongtienTextBox);
+            this.Controls.Add(this.TongtienLabel);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ThoatButton);
             this.Controls.Add(this.XoaButton);
@@ -229,7 +245,7 @@
             this.Controls.Add(this.STKTextBox);
             this.Controls.Add(this.label1);
             this.Name = "Bai08";
-            this.Text = "Quan ly tai khoan";
+            this.Text = "Quản Lý Tài Khoản";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,5 +271,7 @@
         private System.Windows.Forms.ColumnHeader TenKhachHang;
         private System.Windows.Forms.ColumnHeader DiaChi;
         private System.Windows.Forms.ColumnHeader SoTien;
+        private System.Windows.Forms.Label TongtienLabel;
+        private System.Windows.Forms.TextBox TongtienTextBox;
     }
 }

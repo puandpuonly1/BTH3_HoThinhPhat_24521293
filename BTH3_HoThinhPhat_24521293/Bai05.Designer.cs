@@ -140,7 +140,7 @@
             this.Controls.Add(this.Number2TextBox);
             this.Controls.Add(this.Number1Textbox);
             this.Name = "Bai05";
-            this.Text = "Bai05";
+            this.Text = "Lab02-Example";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -17,10 +17,18 @@ namespace BTH3_HoThinhPhat_24521293
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        void UpdateTongTien()
         {
+            float sum = 0;
 
-        }
+            for (int i = 0; i < listView1.Items.Count; i++)
+            {
+                float value;
+                if (float.TryParse(listView1.Items[i].SubItems[4].Text, out value))
+                    sum += value;
+            }
+            TongtienTextBox.Text = sum.ToString();
+        }   
         private void ThemCapnhatButton_Click(object sender, EventArgs e)
         {
             ListViewItem l = new ListViewItem((listView1.Items.Count + 1).ToString());
@@ -30,20 +38,22 @@ namespace BTH3_HoThinhPhat_24521293
                 return;
             }
             for (int i = 0; i < listView1.Items.Count; i++)
-                    if (STKTextBox.Text == listView1.Items[i].SubItems[1].Text)
-                    {
-                        listView1.Items[i].SubItems[2].Text = TKHTextBox.Text;
-                        listView1.Items[i].SubItems[3].Text = DCKHTextBox.Text;
-                        listView1.Items[i].SubItems[4].Text = STTTKTextBox.Text;
+                if (STKTextBox.Text == listView1.Items[i].SubItems[1].Text)
+                {
+                    listView1.Items[i].SubItems[2].Text = TKHTextBox.Text;
+                    listView1.Items[i].SubItems[3].Text = DCKHTextBox.Text;
+                    listView1.Items[i].SubItems[4].Text = STTTKTextBox.Text;
                     MessageBox.Show("Cập nhật dữ liệu thành công!");
-                        return;
-                    }
+                    UpdateTongTien();
+                    return;
+                }
             l.SubItems.Add(STKTextBox.Text);
             l.SubItems.Add(TKHTextBox.Text);
             l.SubItems.Add(DCKHTextBox.Text);
             l.SubItems.Add(STTTKTextBox.Text);
             listView1.Items.Add(l);
             MessageBox.Show("Thêm mới dữ liệu thành công!");
+            UpdateTongTien();
         }
 
         private void XoaButton_Click(object sender, EventArgs e)
@@ -60,13 +70,19 @@ namespace BTH3_HoThinhPhat_24521293
                     if (result == DialogResult.Yes)
                     {
                         listView1.Items[i].Remove();
+                        for (int j = i; j < listView1.Items.Count; j++)
+                        {
+                            listView1.Items[j].SubItems[0].Text = (j + 1).ToString();
+                        }
                         MessageBox.Show("Xóa tài khoản thành công");
+                        UpdateTongTien();
                         return;
                     }
                     else
                         return;
                 }
             MessageBox.Show("Không tìm thấy số tài khoản cần xóa");
+            UpdateTongTien();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,6 +94,12 @@ namespace BTH3_HoThinhPhat_24521293
                 DCKHTextBox.Text = listView1.SelectedItems[0].SubItems[3].Text;
                 STTTKTextBox.Text = listView1.SelectedItems[0].SubItems[4].Text;
             }
+        }
+
+        private void STTTKTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }

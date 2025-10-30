@@ -84,12 +84,14 @@
             this.bài02ToolStripMenuItem.Name = "bài02ToolStripMenuItem";
             this.bài02ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.bài02ToolStripMenuItem.Text = "Bài 02";
+            this.bài02ToolStripMenuItem.Click += new System.EventHandler(this.bài02ToolStripMenuItem_Click);
             // 
             // bài03ToolStripMenuItem
             // 
             this.bài03ToolStripMenuItem.Name = "bài03ToolStripMenuItem";
             this.bài03ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.bài03ToolStripMenuItem.Text = "Bài 03";
+            this.bài03ToolStripMenuItem.Click += new System.EventHandler(this.bài03ToolStripMenuItem_Click);
             // 
             // bài04ToolStripMenuItem
             // 
@@ -148,7 +150,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
-            this.Text = "Form1";
+            this.Text = "MDI";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

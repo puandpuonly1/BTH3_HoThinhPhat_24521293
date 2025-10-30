@@ -19,9 +19,24 @@ namespace BTH3_HoThinhPhat_24521293
 
         private void bài01ToolStripMenuItem_Click(object sender, EventArgs e)
         {
- 
+            Bai01 bai01 = new Bai01();
+            bai01.MdiParent = this;
+            bai01.Show();
         }
 
+        private void bài02ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bai02 bai02 = new Bai02();
+            bai02.MdiParent = this;
+            bai02.Show();
+        }
+
+        private void bài03ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bai03 bai03 = new Bai03();
+            bai03.MdiParent = this;
+            bai03.Show();
+        }
         private void bài04ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Bai04 bai04 = new Bai04();

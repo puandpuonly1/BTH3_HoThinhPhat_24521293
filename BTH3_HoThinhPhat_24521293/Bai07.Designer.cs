@@ -344,7 +344,7 @@
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.label1);
             this.Name = "Bai07";
-            this.Text = "Form1";
+            this.Text = "BÁN VÉ RẠP CHIẾU BÓNG";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
