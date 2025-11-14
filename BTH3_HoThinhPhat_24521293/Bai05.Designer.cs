@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Number1Textbox = new System.Windows.Forms.TextBox();
+            this.Number1TextBox = new System.Windows.Forms.TextBox();
             this.Number1Label = new System.Windows.Forms.Label();
             this.Cong = new System.Windows.Forms.Button();
             this.Tru = new System.Windows.Forms.Button();
@@ -40,12 +40,13 @@
             this.AnswerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Number1Textbox
+            // Number1TextBox
             // 
-            this.Number1Textbox.Location = new System.Drawing.Point(201, 75);
-            this.Number1Textbox.Name = "Number1Textbox";
-            this.Number1Textbox.Size = new System.Drawing.Size(255, 26);
-            this.Number1Textbox.TabIndex = 0;
+            this.Number1TextBox.Location = new System.Drawing.Point(201, 75);
+            this.Number1TextBox.Name = "Number1TextBox";
+            this.Number1TextBox.Size = new System.Drawing.Size(255, 26);
+            this.Number1TextBox.TabIndex = 0;
+            this.Number1TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number1TextBox_KeyPress);
             // 
             // Number1Label
             // 
@@ -64,6 +65,7 @@
             this.Cong.TabIndex = 2;
             this.Cong.Text = "+";
             this.Cong.UseVisualStyleBackColor = true;
+            this.Cong.Click += new System.EventHandler(this.Cong_Click);
             // 
             // Tru
             // 
@@ -73,6 +75,7 @@
             this.Tru.TabIndex = 3;
             this.Tru.Text = "-";
             this.Tru.UseVisualStyleBackColor = true;
+            this.Tru.Click += new System.EventHandler(this.Tru_Click);
             // 
             // Nhan
             // 
@@ -82,6 +85,7 @@
             this.Nhan.TabIndex = 4;
             this.Nhan.Text = "X";
             this.Nhan.UseVisualStyleBackColor = true;
+            this.Nhan.Click += new System.EventHandler(this.Nhan_Click);
             // 
             // Chia
             // 
@@ -91,6 +95,7 @@
             this.Chia.TabIndex = 5;
             this.Chia.Text = "/";
             this.Chia.UseVisualStyleBackColor = true;
+            this.Chia.Click += new System.EventHandler(this.Chia_Click);
             // 
             // Number2TextBox
             // 
@@ -98,6 +103,7 @@
             this.Number2TextBox.Name = "Number2TextBox";
             this.Number2TextBox.Size = new System.Drawing.Size(255, 26);
             this.Number2TextBox.TabIndex = 1;
+            this.Number2TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number2TextBox_KeyPress);
             // 
             // Number2Label
             // 
@@ -138,7 +144,7 @@
             this.Controls.Add(this.Number1Label);
             this.Controls.Add(this.AnswerTextBox);
             this.Controls.Add(this.Number2TextBox);
-            this.Controls.Add(this.Number1Textbox);
+            this.Controls.Add(this.Number1TextBox);
             this.Name = "Bai05";
             this.Text = "Lab02-Example";
             this.ResumeLayout(false);
@@ -148,7 +154,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox Number1Textbox;
+        private System.Windows.Forms.TextBox Number1TextBox;
         private System.Windows.Forms.Label Number1Label;
         private System.Windows.Forms.Button Cong;
         private System.Windows.Forms.Button Tru;

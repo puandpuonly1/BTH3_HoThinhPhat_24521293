@@ -269,32 +269,32 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "STT";
-            this.columnHeader6.Width = 100;
+            this.columnHeader6.Width = 168;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "MSSV";
-            this.columnHeader1.Width = 142;
+            this.columnHeader1.Width = 148;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Họ Tên";
-            this.columnHeader2.Width = 210;
+            this.columnHeader2.Width = 176;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Chuyên Ngành";
-            this.columnHeader3.Width = 232;
+            this.columnHeader3.Width = 167;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Giới Tính";
-            this.columnHeader4.Width = 221;
+            this.columnHeader4.Width = 142;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "Số Môn";
-            this.columnHeader5.Width = 179;
+            this.columnHeader5.Width = 196;
             // 
             // Bai09
             // 

@@ -58,6 +58,9 @@ namespace BTH3_HoThinhPhat_24521293
 
         private void XoaButton_Click(object sender, EventArgs e)
         {
+            TKHTextBox.Text = "";
+            DCKHTextBox.Text = "";
+            STTTKTextBox.Text = "";
             if (STKTextBox.Text.Length == 0)
             {
                 MessageBox.Show("Chưa nhập số tài khoản");
@@ -98,8 +101,13 @@ namespace BTH3_HoThinhPhat_24521293
 
         private void STTTKTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void ThoatButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -28,6 +28,8 @@ namespace BTH3_HoThinhPhat_24521293
             for(int i = 0; i < LV.Items.Count; i++)
                 if(MasinhvienTextBox.Text ==  LV.Items[i].SubItems[1].Text)
                 {
+                    LV.Items[i].SubItems[2].Text = HotenTextBox.Text;
+                    LV.Items[i].SubItems[3].Text = ChuyennganhComboBox.Text.ToString();
                     LV.Items[i].SubItems[5].Text = (listBox2.Items.Count).ToString();
                     MessageBox.Show("Đã cập nhật thành công!");
                     return;
@@ -75,6 +77,7 @@ namespace BTH3_HoThinhPhat_24521293
         private void XoachonButton_Click(object sender, EventArgs e)
         {
             listBox1.SelectedItems.Clear();
+            listBox2.SelectedItems.Clear();
         }
     }
 }

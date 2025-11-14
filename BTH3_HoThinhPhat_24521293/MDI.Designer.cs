@@ -75,63 +75,63 @@
             // bài01ToolStripMenuItem
             // 
             this.bài01ToolStripMenuItem.Name = "bài01ToolStripMenuItem";
-            this.bài01ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài01ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài01ToolStripMenuItem.Text = "Bài 01";
             this.bài01ToolStripMenuItem.Click += new System.EventHandler(this.bài01ToolStripMenuItem_Click);
             // 
             // bài02ToolStripMenuItem
             // 
             this.bài02ToolStripMenuItem.Name = "bài02ToolStripMenuItem";
-            this.bài02ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài02ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài02ToolStripMenuItem.Text = "Bài 02";
             this.bài02ToolStripMenuItem.Click += new System.EventHandler(this.bài02ToolStripMenuItem_Click);
             // 
             // bài03ToolStripMenuItem
             // 
             this.bài03ToolStripMenuItem.Name = "bài03ToolStripMenuItem";
-            this.bài03ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài03ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài03ToolStripMenuItem.Text = "Bài 03";
             this.bài03ToolStripMenuItem.Click += new System.EventHandler(this.bài03ToolStripMenuItem_Click);
             // 
             // bài04ToolStripMenuItem
             // 
             this.bài04ToolStripMenuItem.Name = "bài04ToolStripMenuItem";
-            this.bài04ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài04ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài04ToolStripMenuItem.Text = "Bài 04";
             this.bài04ToolStripMenuItem.Click += new System.EventHandler(this.bài04ToolStripMenuItem_Click);
             // 
             // bài05ToolStripMenuItem
             // 
             this.bài05ToolStripMenuItem.Name = "bài05ToolStripMenuItem";
-            this.bài05ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài05ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài05ToolStripMenuItem.Text = "Bài 05";
             this.bài05ToolStripMenuItem.Click += new System.EventHandler(this.bài05ToolStripMenuItem_Click);
             // 
             // bài06ToolStripMenuItem
             // 
             this.bài06ToolStripMenuItem.Name = "bài06ToolStripMenuItem";
-            this.bài06ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài06ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài06ToolStripMenuItem.Text = "Bài 06";
             this.bài06ToolStripMenuItem.Click += new System.EventHandler(this.bài06ToolStripMenuItem_Click);
             // 
             // bài07ToolStripMenuItem
             // 
             this.bài07ToolStripMenuItem.Name = "bài07ToolStripMenuItem";
-            this.bài07ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài07ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài07ToolStripMenuItem.Text = "Bài 07";
             this.bài07ToolStripMenuItem.Click += new System.EventHandler(this.bài07ToolStripMenuItem_Click);
             // 
             // bài08ToolStripMenuItem
             // 
             this.bài08ToolStripMenuItem.Name = "bài08ToolStripMenuItem";
-            this.bài08ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài08ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài08ToolStripMenuItem.Text = "Bài 08";
             this.bài08ToolStripMenuItem.Click += new System.EventHandler(this.bài08ToolStripMenuItem_Click);
             // 
             // bài09ToolStripMenuItem
             // 
             this.bài09ToolStripMenuItem.Name = "bài09ToolStripMenuItem";
-            this.bài09ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bài09ToolStripMenuItem.Size = new System.Drawing.Size(162, 34);
             this.bài09ToolStripMenuItem.Text = "Bài 09";
             this.bài09ToolStripMenuItem.Click += new System.EventHandler(this.bài09ToolStripMenuItem_Click);
             // 
@@ -151,6 +151,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
             this.Text = "MDI";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

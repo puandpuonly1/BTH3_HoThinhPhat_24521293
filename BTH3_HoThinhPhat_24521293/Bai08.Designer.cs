@@ -163,6 +163,7 @@
             this.ThoatButton.TabIndex = 6;
             this.ThoatButton.Text = "Thoát";
             this.ThoatButton.UseVisualStyleBackColor = true;
+            this.ThoatButton.Click += new System.EventHandler(this.ThoatButton_Click);
             // 
             // listView1
             // 

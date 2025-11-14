@@ -31,7 +31,7 @@ namespace BTH3_HoThinhPhat_24521293
                 btn.BackColor = Color.Blue;
             }
             else if (btn.BackColor == Color.Yellow)
-                MessageBox.Show("Ve o vi tri nay da duoc ban");
+                MessageBox.Show("Vé ở vị trí này đã được bán");
             else
             {
                 if (sender == button1 || sender == button2 || sender == button3 || sender == button4 || sender == button5)
